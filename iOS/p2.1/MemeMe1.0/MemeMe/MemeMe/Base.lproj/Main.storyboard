@@ -53,19 +53,21 @@
                                 </items>
                             </toolbar>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="N5a-b4-PWz" userLabel="Bottom Text Field">
-                                <rect key="frame" x="41" y="506" width="519" height="30"/>
+                                <rect key="frame" x="0.0" y="506" width="600" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleAspectFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="mfH-lN-cSM">
-                                <rect key="frame" x="41" y="71" width="519" height="30"/>
+                                <rect key="frame" x="0.0" y="71" width="600" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters"/>
                             </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="mfH-lN-cSM" secondAttribute="trailing" id="491-Mw-r3M"/>
                             <constraint firstItem="5X4-cd-kJG" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="6GF-qN-1yP"/>
+                            <constraint firstItem="mfH-lN-cSM" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="99e-eT-pRL"/>
                             <constraint firstItem="xNZ-wI-M5d" firstAttribute="top" secondItem="WbG-Cb-TI7" secondAttribute="bottom" id="FD7-RC-jTv"/>
                             <constraint firstItem="5X4-cd-kJG" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="I7A-0m-lib"/>
                             <constraint firstItem="5X4-cd-kJG" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="JLl-cV-FKa"/>
@@ -73,9 +75,11 @@
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="xNZ-wI-M5d" secondAttribute="bottom" id="Kat-G9-eGG"/>
                             <constraint firstItem="mfH-lN-cSM" firstAttribute="top" secondItem="5X4-cd-kJG" secondAttribute="bottom" constant="27" id="LIb-yJ-oAA"/>
                             <constraint firstItem="N5a-b4-PWz" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Ods-Ky-szE"/>
+                            <constraint firstItem="N5a-b4-PWz" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="P3k-7C-65L"/>
                             <constraint firstAttribute="trailingMargin" secondItem="xNZ-wI-M5d" secondAttribute="trailing" constant="-20" id="PGj-Tb-YWj"/>
                             <constraint firstItem="mfH-lN-cSM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Qaf-Co-mJF"/>
                             <constraint firstAttribute="trailingMargin" secondItem="WbG-Cb-TI7" secondAttribute="trailing" constant="-20" id="Tru-Bm-FfC"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="N5a-b4-PWz" secondAttribute="trailing" id="ZWs-HW-bQh"/>
                             <constraint firstAttribute="trailingMargin" secondItem="5X4-cd-kJG" secondAttribute="trailing" constant="-20" id="iHn-wY-RbF"/>
                             <constraint firstItem="xNZ-wI-M5d" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="jRm-qh-cBi"/>
                             <constraint firstItem="WbG-Cb-TI7" firstAttribute="top" secondItem="5X4-cd-kJG" secondAttribute="bottom" id="jaP-Qr-Hic"/>
