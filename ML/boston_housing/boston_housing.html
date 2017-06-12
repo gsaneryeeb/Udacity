@@ -11929,7 +11929,7 @@ Standard deviation of prices: $165,171.13
 <ul>
 <li><code>'RM'</code>: MEDV will increases as RM increases. The higher the number of rooms,the higher the price of the house.</li>
 <li><code>'LSTAT'</code>: MEDV will decreases as LSTAT increases.Low-income families can't afford a high-price house. The higher LSTAT means the lower total house price of the area.</li>
-<li><code>'PTRATIO'</code>: MEDV will incerases as PTRATIo increase.The higher PTRATIO, the more students of the area. The family has enough money to afford tuition，So the price of house will be higher in this area.</li>
+<li><code>'PTRATIO'</code>: MEDV will decreases as PTRATIO increase. Beacuse lower the student to teacher ratio,higer the quailty of education, residents are willing to pay higher prices in this area.</li>
 </ul>
 
 </div>
@@ -13711,6 +13711,8 @@ QmCC
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>Answer: </strong> When the model is trained with a maximum depth of 1, the model suffer from high bias. When the model is trained with a maximum depth of 10, the model suffer from high variance.</p>
+<p>When a model is trained with max_depth = 1, the model has high bias,because training score and validation score are both low.The model is consequently underfitting the data.</p>
+<p>When a model is trained with max_depth = 10, the model has high variance.The training score is more higher than the validation score. These means the model has better performance in the training dataset and the socre has a litter change in the vailation dataset. This indicates overfitting of data.</p>
 <p>If the training score and the validation score are both low, the estimator will be underfitting. If the training score is high and the validation score is low, the estimator is overfitting and otherwise it is working very well. So the depth of 4 is the better value.</p>
 
 </div>
@@ -13921,7 +13923,8 @@ For the <code>fit_model</code> function in the code cell below, you will need to
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>Answer: </strong> The optimal model have a maximum depth of 4</p>
+<p><strong>Answer: </strong> The optimal model have a maximum depth of 4.</p>
+<p>This result is the same as my guess of maximum depth of 4 in question 6. The k-fold cross-validation helped to fine tune the parameters to the optimum value.</p>
 
 </div>
 </div>
@@ -14018,6 +14021,10 @@ Predicted selling price for Client 3&#39;s home: $930,490.91
 <li><p>Recommended selling price for Client 3's home:$930,490.91</p>
 </li>
 </ul>
+<p>These three prices seem reasonable as the predicted prices are well within the range of the minimum and maximum prices of the dataset.</p>
+<p>Client 3's the number of rooms(RM) is the highest among the three clients, the neighborhood poverty level(LSTAT) and the student-teacher ratio of nearby schools(PTRATIO) is the lowest. From the previous analysis we can predict the client 3's price should be the highest, and the actual result is the same. 
+On the contary, Client 2's price is the lowest.
+And Clinet 1‘s price is the middle.</p>
 
 </div>
 </div>
